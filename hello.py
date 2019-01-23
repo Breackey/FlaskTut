@@ -6,3 +6,11 @@ app=Flask(__name__) #instatiates flask class
 def hello_world(): #the function to be trigered
   return "Hello World!"  #returns the message to be displayed
 
+#routing
+@app.route('/')
+def index():
+  return 'Index Page'
+
+@app.route('/hello')
+def hello():
+  return 'Hello World' 
